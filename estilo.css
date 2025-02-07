@@ -41,6 +41,12 @@
     transition: 0.3s;  
 }
 
+
+.BarraInicio a{
+    
+    font-family: 'Josefin Sans', sans-serif;
+
+}
 .TituloPresentacion {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
