@@ -1,0 +1,79 @@
+.InicioImagen{
+    width: 100%;
+    background-image: url(../FanPageCerati/Imagenes/init2.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 115vh;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6); /* Sombra solo abajo */
+
+        
+}
+
+.BarraInicio ul li {
+    list-style-type: none;  
+    display: inline-block;  
+    padding: 5px 20px;  
+}
+
+.BarraInicio ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.BarraInicio ul li {
+    margin: 0 20px;  
+}
+
+.BarraInicio ul li a {
+    color: rgb(0, 0, 0);  
+    text-decoration: none;  
+    font-weight: bold;  
+    font-size: 18px;
+}
+
+.BarraInicio ul li a:hover {
+    color: #0077ff; 
+    transition: 0.3s;  
+}
+
+.TituloPresentacion {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center; 
+    line-height: 1.5; 
+}
+
+.NombreResalto {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700; 
+    font-style: italic; 
+    text-align: center; 
+    line-height: 1.5; 
+}
+
+.TextoArriba{
+    color: rgb(0, 0, 0); /* Color negro para el texto */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center; 
+    margin: 10px 0; /* Espaciado superior e inferior */
+    text-shadow: 1px 1px 5px rgba(66, 136, 194, 0.9); 
+}
+
+.TextoAbajo {
+    color: rgb(0, 0, 0); /* Color del texto */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify; /* Alinea el texto para una mejor presentación */
+    margin: 20px auto; 
+    max-width: 800px; 
+    line-height: 1.8;
+    padding: 10px;
+    border-radius: 8px; /* Bordes redondeados */
+}
