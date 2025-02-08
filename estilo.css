@@ -1,3 +1,4 @@
+/*Imagenes y fondos*/
 .InicioImagen{
     width: 100%;
     background-image: url(../FanPageCerati/Imagenes/init2.jpg);
@@ -10,6 +11,72 @@
         
 }
 
+.CronologiaImagen{
+    width: 100%;
+    background-image: url(../FanPageCerati/Imagenes/crono2.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    padding-bottom: 50px;
+           
+}
+
+
+.seccion-neutral {
+    border: 2px solid #ccc; /* Borde alrededor */
+    background: linear-gradient(135deg, #eeeeee, #dddddd); /* Gradiente neutro */
+    padding: 30px; /* Más espacio interno */
+    margin: 20px auto; /* Centrado horizontal */
+    width: 70%; /* Ajustamos el ancho */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+.album {
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.album2{
+
+    border: 2px solid black;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+}
+
+
+/* Fondos de gradiente para cada album */
+.amarillo {
+    background: linear-gradient(135deg, #fff9c4, #ffeb3b);
+}
+
+.azul {
+    background: linear-gradient(135deg, #b3e5fc, #03a9f4);
+}
+
+.rojo {
+    background: linear-gradient(135deg, #ef9a9a, #f44336);
+}
+
+.gris {
+    background: linear-gradient(135deg, #cfd8dc, #607d8b);
+}
+
+.verde {
+    background: linear-gradient(135deg, #c8e6c9, #4caf50);
+}
+
+
+
+
+/*Nav bar superior*/
 .BarraInicio ul li {
     list-style-type: none;  
     display: inline-block;  
@@ -47,6 +114,8 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
+
+/*Texto*/
 .TituloPresentacion {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
@@ -76,10 +145,113 @@
     color: rgb(0, 0, 0); /* Color del texto */
     font-family: Arial, sans-serif;
     font-size: 16px;
-    text-align: justify; /* Alinea el texto para una mejor presentación */
+    text-align: justify; /* Alinea el texto para una mejor presentacion */
     margin: 20px auto; 
     max-width: 800px; 
     line-height: 1.8;
     padding: 10px;
     border-radius: 8px; /* Bordes redondeados */
+}
+
+.TitulosAlbum{
+
+    font-family: "Kanit", san-serif;
+    font-weight: 700;
+    font-style:normal;
+    text-align: center;
+    font-size: 25px;
+        
+}
+
+
+/*Listas ordenadas y sin orden*/
+
+
+.lista-destacada-ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.lista-destacada-ul li {
+    color: black;
+    position: relative;
+}
+
+.lista-destacada-ul li::marker {
+    color: #ff5722; 
+}
+
+.lista-destacada-ol {
+    padding-left: 20px;
+}
+
+.lista-destacada-ol li {
+    color: black;
+    position: relative;
+}
+
+.lista-destacada-ol li::marker {
+    color: #3f51b5; 
+}
+
+
+
+
+/* Estilo del indice */
+.indice-estilo {
+    border: 2px solid black; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 80%; 
+    text-align: center; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.indice-estilo h2 {
+    margin-bottom: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+/* Contenedor para los enlaces */
+.indice-contenedor {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 15px; /
+}
+
+
+
+.indice-contenedor a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none; 
+    color: #333; 
+    padding: 5px 10px;
+    border: 1px solid #ccc; /* Borde de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transicion para efectos */
+}
+
+.indice-contenedor2 a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none; /* Sin subrayado */
+    color: #000; /* Texto negro */
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px 20px; /* Más espacio interno */
+    border: 2px solid #000; /* Contorno negro */
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: all 0.3s ease; /* Transición para efectos */
+    text-align: center; /* Centra el texto */
+    display: inline-block; /* Asegura que se comporte como un botón */
+    
+}
+
+
+.indice-contenedor a:hover {
+    background-color: #f0f0f0; /* Fondo al pasar el mouse */
+    border-color: #333; /* Color del borde al pasar el mouse */
+    color: #0077ff; /* Cambia el color del texto */
 }
