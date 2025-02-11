@@ -130,6 +130,20 @@
 
 }
 
+.BarraInicio {
+    position: fixed; /* Hace que la barra de navegación se mantenga fija */
+    top: 0; /* La coloca en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupará todo el ancho */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo con opacidad */
+    padding: 10px 0;
+    z-index: 1000; /* Asegura que esté sobre los demás elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+}
+
+body {
+    padding-top: 60px; /* Ajusta el espacio superior para que no se superponga */
+}
 /*Texto*/
 .TituloPresentacion {
     font-family: 'Kanit', sans-serif;
@@ -292,7 +306,7 @@
 
 @keyframes appear{
     from{
-        opacity: 0.2;
+        opacity: 0;
         /*scale: 0.5;*/
         transform: translateX(-100px)
     }
@@ -346,3 +360,58 @@
     color: white;
     font-weight: bold; /* Texto en negrita */
 }
+
+
+/*Material interes*/
+.flotante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    max-height: 100vh;
+    
+}
+
+/* Título principal */
+.TituloCentrado {
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5; 
+    text-decoration: underline;
+    text-decoration-color:rgba(66, 136, 194, 0.9)
+}
+
+
+/* Contenedor de imágenes */
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+/* Imágenes flotantes */
+.imagenes-flotantes {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.2s ease-out;
+}
+
+/* Posiciones iniciales de las imágenes */
+.img1 { top: 10%; left: 10%; }
+.img2 { top: 10%; right: 15%; }
+.img3 { top: 60%; left: 5%; }
+.img4 { top: 50%; right: 10%; }
+.img5 { bottom: 25%; left: 20%; }
+.img6 { bottom: 25%; left: 60%; }
+.img7 { top: 5%; left: 40%;  }
