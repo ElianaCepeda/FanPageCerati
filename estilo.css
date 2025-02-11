@@ -437,3 +437,54 @@ body {
    
 
 }
+
+
+/*chat*/
+
+/* Estilos del chat */
+.chat {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 200px;
+    overflow-y: scroll; /* Barra de desplazamiento si es necesario */
+    
+}
+
+/* Estilos de los mensajes */
+.mensaje {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Color de fondo claro */
+}
+
+/* Estilos de la entrada de mensaje */
+.entrada {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.entrada input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.entrada button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el mensaje de error */
+.mensaje_error {
+    color: red;
+    margin-top: 5px;
+}
