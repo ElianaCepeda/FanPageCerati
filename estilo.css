@@ -37,18 +37,33 @@
 
 
 .album {
+    width: 90%; 
+    max-width: 1200px; 
+    min-height: 40vh;
     border: 2px solid black;
-    padding: 15px;
-    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Mantiene el titulo arriba */
+    align-items: center; 
+    margin: 0 auto; 
+    overflow: hidden; /* Evita que el contenido haga que el contenedor crezca mas */
+    margin: 50px auto 50px auto;
 }
 
-.album2{
+.contenido-album {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px; 
+}
 
-    border: 2px solid black;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-top: 60px;
-
+.imagen-album {
+    width: 35%; 
+    max-width: 250px; 
+    height: auto;
+    border-radius: 15px;
 }
 
 
@@ -122,6 +137,7 @@
     font-style: normal;
     text-align: center; 
     line-height: 1.5; 
+    
 }
 
 .NombreResalto {
@@ -130,6 +146,8 @@
     font-style: italic; 
     text-align: center; 
     line-height: 1.5; 
+    text-decoration: underline;
+    text-decoration-color:rgba(66, 136, 194, 0.9)
 }
 
 .TextoArriba{
@@ -151,6 +169,19 @@
     line-height: 1.8;
     padding: 10px;
     border-radius: 8px; /* Bordes redondeados */
+}
+
+.TextoAbajo2 {
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left; 
+    margin: 20px auto;
+    max-width: 90%; 
+    line-height: 1.8;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
 }
 
 .TitulosAlbum{
@@ -217,7 +248,7 @@
 .indice-contenedor {
     display: flex; 
     flex-wrap: wrap; 
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px; /
 }
 
@@ -254,4 +285,64 @@
     background-color: #f0f0f0; /* Fondo al pasar el mouse */
     border-color: #333; /* Color del borde al pasar el mouse */
     color: #0077ff; /* Cambia el color del texto */
+}
+
+
+/*Animacionea*/
+
+@keyframes appear{
+    from{
+        opacity: 0.2;
+        /*scale: 0.5;*/
+        transform: translateX(-100px)
+    }
+    to{
+        opacity: 1;
+        /*scale: 1;*/
+        transform: translateX(0px)
+    }
+}
+
+.bloque{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+/*Tablas*/
+
+/* Estilos generales de la tabla */
+.tabla-estilizada {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Bordes y alineación */
+.tabla-estilizada th, 
+.tabla-estilizada td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Filas impares: Verde claro */
+.fila-impar {
+    background-color: #c8e6c9; /* Verde claro */
+    color: black;
+}
+
+/* Filas pares: Blanco */
+.fila-par {
+    background-color: white;
+    color: black;
+}
+
+/* Encabezados de la tabla */
+.tabla-estilizada th {
+    background-color: #0D47A1; /* Azul oscuro */
+    color: white;
+    font-weight: bold; /* Texto en negrita */
 }
