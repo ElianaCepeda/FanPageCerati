@@ -35,16 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     // Seleccionar todas las secciones de los álbumes
     const albumes = document.querySelectorAll(".album");
-
+    
     albumes.forEach(album => {
-        album.addEventListener("mouseenter", () => {
-            album.style.backgroundColor = "#f0f0f0"; // Nuevo color de fondo
-            album.style.border = "3px solid #0077ff"; // Nuevo color de borde
+        album.addEventListener("mouseover", () => {
+            album.style.background = "linear-gradient(to right, #BA55D3, #FFFFFF)"; // Nuevo color de fondo
+            album.style.border = "3px solid #BA55D3"; // Nuevo color de borde
             album.style.transition = "all 0.3s ease"; // Suaviza el cambio
         });
 
         album.addEventListener("mouseleave", () => {
-            album.style.backgroundColor = ""; // Vuelve al color original (gradiente en CSS)
+            album.style.background = ""; // Vuelve al color original (gradiente en CSS)
             album.style.border = "2px solid black"; // Borde original
         });
     });
