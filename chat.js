@@ -1,42 +1,63 @@
 // Obtener elementos del DOM
 const chat = document.querySelector('.chat');
-const inputMensaje = document.querySelector('.entrada input[type="text"]');
+const inputRemitente = document.getElementById('remitente');
+const inputMensaje = document.getElementById('mensaje');
 const botonEnviar = document.getElementById('boton-enviado');
+const botonBorrar = document.getElementById('boton-borrar');
 const mensajeError = document.getElementById('mensaje_error');
 
-// Función para crear un nuevo mensaje
-function crearMensaje(texto) {
+// Funcion para crear un nuevo mensaje
+function crearMensaje(remitente, texto) {
     const nuevoMensaje = document.createElement('div');
     nuevoMensaje.classList.add('mensaje');
-    nuevoMensaje.textContent = texto;
+
+    const remitenteElemento = document.createElement('p');
+    remitenteElemento.classList.add('remitente');
+    remitenteElemento.textContent = `${remitente}:`;
+
+    const mensajeTexto = document.createElement('p');
+    mensajeTexto.textContent = texto;
+
+    nuevoMensaje.appendChild(remitenteElemento);
+    nuevoMensaje.appendChild(mensajeTexto);
+
     return nuevoMensaje;
 }
 
-// Función para añadir un mensaje al chat
+// Funcion para agregar un mensaje al chat
 function agregarMensaje(mensaje) {
     chat.appendChild(mensaje);
     chat.scrollTop = chat.scrollHeight; // Mantener el scroll abajo
 }
 
-// Evento click del botón enviar
+// Evento click del boton enviar
 botonEnviar.addEventListener('click', () => {
-    const textoMensaje = inputMensaje.value.trim(); // Obtener y limpiar el texto
+    const remitente = inputRemitente.value.trim();
+    const textoMensaje = inputMensaje.value.trim();
 
-    if (textoMensaje === '') {
-        mensajeError.textContent = "Debes escribir un mensaje"; // Mostrar mensaje de error
-        return; // Salir de la función si el mensaje está vacío
+    if (remitente === '' || textoMensaje === '') {
+        mensajeError.textContent = "Debes llenar ambos campos.";
+        return;
     }
 
-    const nuevoMensaje = crearMensaje(textoMensaje); // Crear elemento mensaje
-    agregarMensaje(nuevoMensaje); // Añadir mensaje al chat
+    const nuevoMensaje = crearMensaje(remitente, textoMensaje);
+    agregarMensaje(nuevoMensaje);
 
-    inputMensaje.value = ''; // Limpiar el input
-    mensajeError.textContent = ''; // Limpiar mensaje de error
+    inputRemitente.value = '';
+    inputMensaje.value = '';
+    mensajeError.textContent = '';
+
+    // Mostrar el boton de borrar si hay mensajes
+    if (chat.children.length > 0) {
+        botonBorrar.style.display = 'block';
+    }
 });
 
 // Evento keypress para enviar con Enter
 inputMensaje.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
-        botonEnviar.click(); // Simular click en el botón enviar
+        botonEnviar.click();
     }
 });
+
+

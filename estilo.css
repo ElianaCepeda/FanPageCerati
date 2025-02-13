@@ -416,75 +416,95 @@ body {
 .img6 { bottom: 25%; left: 60%; }
 .img7 { top: 5%; left: 40%;  }
 
-
-.contenedorVideo{
-
-    position: relative;
-    width:100%;
-    padding-bottom:56.25% ;
-    height:0;
-
+/* Contenedor para centrar el video */
+.contenedorVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px; /
 }
 
 
-.contenedorVideo iframe{
-
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-   
-
+.contenedorVideo iframe {
+    width: 800px;  
+    height: 450px;
+    padding-top: 40px;
+    
 }
-
 
 /*chat*/
 
-/* Estilos del chat */
+.contenedor {
+    width: 650px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px auto; 
+}
+
 .chat {
     flex-grow: 1;
-    border: 1px solid #ccc;
-    padding: 200px;
-    overflow-y: scroll; /* Barra de desplazamiento si es necesario */
-    
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 /* Estilos de los mensajes */
 .mensaje {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 8px;
+    margin-bottom: 8px;
     border-radius: 5px;
-    background-color: #f0f0f0; /* Color de fondo claro */
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    word-wrap: break-word;
 }
 
-/* Estilos de la entrada de mensaje */
+/* Nombre del remitente */
+.remitente {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Caja de entrada */
 .entrada {
     display: flex;
-    align-items: center;
     padding: 10px;
     border-top: 1px solid #ccc;
 }
 
-.entrada input[type="text"] {
-    flex-grow: 1;
-    padding: 8px;
+.entrada input {
+    flex: 1;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-right: 5px;
+    font-size: 16px;
 }
 
+/* Boton de enviar */
 .entrada button {
-    padding: 8px 15px;
-    margin-left: 10px;
-    background-color: #4CAF50; /* Verde */
+    padding: 10px 15px;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
+
+
 
 /* Estilos para el mensaje de error */
 .mensaje_error {
     color: red;
+    text-align: center;
     margin-top: 5px;
 }
