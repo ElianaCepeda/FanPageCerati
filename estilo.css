@@ -11,6 +11,28 @@
         
 }
 
+
+.contenedorTexto {
+    display: flex;
+    align-items: flex-start;
+    max-width: 900px;
+    margin: 20px auto;
+    flex-wrap: wrap; /* Permite que el texto fluya si no hay espacio */
+}
+
+/* Imagen flotante con sombra */
+.imagenFlotante {
+    width: 250px; /* Ajuste del tamaño de la imagen */
+    height: auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+    border:#000;
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+    margin-right: 20px;
+    margin-bottom: 10px; /* Espacio debajo para cuando el texto siga */
+    float: left;
+}
+
 .CronologiaImagen{
     width: 100%;
     background-image: url(../FanPageCerati/Imagenes/crono2.png);
@@ -179,11 +201,26 @@ body {
     font-size: 16px;
     text-align: justify; /* Alinea el texto para una mejor presentacion */
     margin: 20px auto; 
-    max-width: 800px; 
+    max-width: 870px; 
     line-height: 1.8;
     padding: 10px;
     border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    
 }
+
+/* Texto alineado a la derecha de la imagen */
+.textoLado {
+    flex: 1; /* Hace que el texto ocupe el resto del espacio */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 20px auto; 
+    padding: 10px;
+}
+
 
 .TextoAbajo2 {
     color: rgb(0, 0, 0);
