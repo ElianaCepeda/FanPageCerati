@@ -1,14 +1,15 @@
 /*Imagenes y fondos*/
-.InicioImagen{
+.InicioImagen {
     width: 100%;
     background-image: url(../FanPageCerati/Imagenes/init2.jpg);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 115vh;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6); /* Sombra solo abajo */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    /* Sombra solo abajo */
 
-        
+
 }
 
 
@@ -17,59 +18,74 @@
     align-items: flex-start;
     max-width: 900px;
     margin: 20px auto;
-    flex-wrap: wrap; /* Permite que el texto fluya si no hay espacio */
+    flex-wrap: wrap;
+    /* Permite que el texto fluya si no hay espacio */
 }
 
 /* Imagen flotante con sombra */
 .imagenFlotante {
-    width: 250px; /* Ajuste del tamaño de la imagen */
+    width: 250px;
+    /* Ajuste del tamaño de la imagen */
     height: auto;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+    /* Sombra */
     border: 1px solid #949494;
-    padding-top: 20px ;
-    padding-bottom: 20px ;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-right: 20px;
-    margin-bottom: 10px; /* Espacio debajo para cuando el texto siga */
+    margin-bottom: 10px;
+    /* Espacio debajo para cuando el texto siga */
     float: left;
 }
 
-.CronologiaImagen{
+.CronologiaImagen {
     width: 100%;
     background-image: url(../FanPageCerati/Imagenes/crono2.png);
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 70vh;
     padding-bottom: 50px;
-           
+
 }
 
 
 .seccion-neutral {
-    border: 2px solid #ccc; /* Borde alrededor */
-    background: linear-gradient(135deg, #eeeeee, #dddddd); /* Gradiente neutro */
-    padding: 30px; /* Más espacio interno */
-    margin: 20px auto; /* Centrado horizontal */
-    width: 70%; /* Ajustamos el ancho */
-    display: flex; /* Flexbox para centrar el contenido */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 2px solid #ccc;
+    /* Borde alrededor */
+    background: linear-gradient(135deg, #eeeeee, #dddddd);
+    /* Gradiente neutro */
+    padding: 30px;
+    /* Más espacio interno */
+    margin: 20px auto;
+    /* Centrado horizontal */
+    width: 70%;
+    /* Ajustamos el ancho */
+    display: flex;
+    /* Flexbox para centrar el contenido */
+    justify-content: center;
+    /* Centrado horizontal */
+    align-items: center;
+    /* Centrado vertical */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
 }
 
 
 .album {
-    width: 90%; 
-    max-width: 1200px; 
+    width: 90%;
+    max-width: 1200px;
     min-height: 40vh;
     border: 2px solid black;
     border-radius: 15px;
     padding: 20px;
     display: flex;
-    flex-direction: column; /* Mantiene el titulo arriba */
-    align-items: center; 
-    margin: 0 auto; 
-    overflow: hidden; /* Evita que el contenido haga que el contenedor crezca mas */
+    flex-direction: column;
+    /* Mantiene el titulo arriba */
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+    /* Evita que el contenido haga que el contenedor crezca mas */
     margin: 50px auto 50px auto;
 }
 
@@ -78,12 +94,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1000px; 
+    max-width: 1000px;
 }
 
 .imagen-album {
-    width: 35%; 
-    max-width: 250px; 
+    width: 35%;
+    max-width: 250px;
     height: auto;
     border-radius: 15px;
 }
@@ -115,9 +131,9 @@
 
 /*Nav bar superior*/
 .BarraInicio ul li {
-    list-style-type: none;  
-    display: inline-block;  
-    padding: 5px 20px;  
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 20px;
 }
 
 .BarraInicio ul {
@@ -130,94 +146,108 @@
 }
 
 .BarraInicio ul li {
-    margin: 0 20px;  
+    margin: 0 20px;
 }
 
 .BarraInicio ul li a {
-    color: rgb(0, 0, 0);  
-    text-decoration: none;  
-    font-weight: bold;  
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
     font-size: 18px;
 }
 
 .BarraInicio ul li a:hover {
-    color: #0077ff; 
-    transition: 0.3s;  
+    color: #0077ff;
+    transition: 0.3s;
 }
 
 
-.BarraInicio a{
-    
+.BarraInicio a {
+
     font-family: 'Josefin Sans', sans-serif;
 
 }
 
 .BarraInicio {
-    position: fixed; /* Hace que la barra de navegación se mantenga fija */
-    top: 0; /* La coloca en la parte superior */
+    position: fixed;
+    /* Hace que la barra de navegación se mantenga fija */
+    top: 0;
+    /* La coloca en la parte superior */
     left: 0;
-    width: 100%; /* Ocupará todo el ancho */
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo con opacidad */
+    width: 100%;
+    /* Ocupará todo el ancho */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo con opacidad */
     padding: 10px 0;
-    z-index: 1000; /* Asegura que esté sobre los demás elementos */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inferior */
+    z-index: 1000;
+    /* Asegura que esté sobre los demás elementos */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra inferior */
 }
 
 body {
-    padding-top: 60px; /* Ajusta el espacio superior para que no se superponga */
+    padding-top: 60px;
+    /* Ajusta el espacio superior para que no se superponga */
 }
+
 /*Texto*/
 .TituloPresentacion {
     font-family: 'Kanit', sans-serif;
     font-weight: 300;
     font-style: normal;
-    text-align: center; 
-    line-height: 1.5; 
-    
+    text-align: center;
+    line-height: 1.5;
+
 }
 
 .NombreResalto {
     font-family: 'Kanit', sans-serif;
-    font-weight: 700; 
-    font-style: italic; 
-    text-align: center; 
-    line-height: 1.5; 
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.5;
     text-decoration: underline;
-    text-decoration-color:rgba(66, 136, 194, 0.9)
+    text-decoration-color: rgba(66, 136, 194, 0.9)
 }
 
-.TextoArriba{
-    color: rgb(0, 0, 0); /* Color negro para el texto */
+.TextoArriba {
+    color: rgb(0, 0, 0);
+    /* Color negro para el texto */
     font-family: Arial, sans-serif;
     font-size: 16px;
-    text-align: center; 
-    margin: 10px 0; /* Espaciado superior e inferior */
-    text-shadow: 1px 1px 5px rgba(66, 136, 194, 0.9); 
+    text-align: center;
+    margin: 10px 0;
+    /* Espaciado superior e inferior */
+    text-shadow: 1px 1px 5px rgba(66, 136, 194, 0.9);
 }
 
 .TextoAbajo {
-    color: rgb(0, 0, 0); /* Color del texto */
+    color: rgb(0, 0, 0);
+    /* Color del texto */
     font-family: Arial, sans-serif;
     font-size: 16px;
-    text-align: justify; /* Alinea el texto para una mejor presentacion */
-    margin: 20px auto; 
-    max-width: 870px; 
+    text-align: justify;
+    /* Alinea el texto para una mejor presentacion */
+    margin: 20px auto;
+    max-width: 870px;
     line-height: 1.8;
     padding: 10px;
-    border-radius: 8px; /* Bordes redondeados */
+    border-radius: 8px;
+    /* Bordes redondeados */
     overflow: hidden;
-    
+
 }
 
 /* Texto alineado a la derecha de la imagen */
 .textoLado {
-    flex: 1; /* Hace que el texto ocupe el resto del espacio */
+    flex: 1;
+    /* Hace que el texto ocupe el resto del espacio */
     font-family: Arial, sans-serif;
     font-size: 16px;
     text-align: justify;
     line-height: 1.8;
     max-width: 600px;
-    margin: 20px auto; 
+    margin: 20px auto;
     padding: 10px;
 }
 
@@ -226,23 +256,23 @@ body {
     color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     font-size: 16px;
-    text-align: left; 
+    text-align: left;
     margin: 20px auto;
-    max-width: 90%; 
+    max-width: 90%;
     line-height: 1.8;
     padding: 10px;
     border-radius: 8px;
     display: block;
 }
 
-.TitulosAlbum{
+.TitulosAlbum {
 
     font-family: "Kanit", san-serif;
     font-weight: 700;
-    font-style:normal;
+    font-style: normal;
     text-align: center;
     font-size: 25px;
-        
+
 }
 
 
@@ -260,7 +290,7 @@ body {
 }
 
 .lista-destacada-ul li::marker {
-    color: #ff5722; 
+    color: #ff5722;
 }
 
 .lista-destacada-ol {
@@ -273,7 +303,7 @@ body {
 }
 
 .lista-destacada-ol li::marker {
-    color: #3f51b5; 
+    color: #3f51b5;
 }
 
 
@@ -281,12 +311,12 @@ body {
 
 /* Estilo del indice */
 .indice-estilo {
-    border: 2px solid black; 
-    padding: 20px; 
-    margin: 20px auto; 
-    width: 80%; 
-    text-align: center; 
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); 
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .indice-estilo h2 {
@@ -297,10 +327,10 @@ body {
 
 /* Contenedor para los enlaces */
 .indice-contenedor {
-    display: flex; 
-    flex-wrap: wrap; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 15px; /
+    gap: 15px;/
 }
 
 
@@ -308,53 +338,69 @@ body {
 .indice-contenedor a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    text-decoration: none; 
-    color: #333; 
+    text-decoration: none;
+    color: #333;
     padding: 5px 10px;
-    border: 1px solid #ccc; /* Borde de los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: all 0.3s ease; /* Transicion para efectos */
+    border: 1px solid #ccc;
+    /* Borde de los enlaces */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: all 0.3s ease;
+    /* Transicion para efectos */
 }
 
 .indice-contenedor2 a {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
-    text-decoration: none; /* Sin subrayado */
-    color: #000; /* Texto negro */
-    background-color: #fff; /* Fondo blanco */
-    padding: 10px 20px; /* Más espacio interno */
-    border: 2px solid #000; /* Contorno negro */
-    border-radius: 8px; /* Bordes más redondeados */
-    transition: all 0.3s ease; /* Transición para efectos */
-    text-align: center; /* Centra el texto */
-    display: inline-block; /* Asegura que se comporte como un botón */
-    
+    text-decoration: none;
+    /* Sin subrayado */
+    color: #000;
+    /* Texto negro */
+    background-color: #fff;
+    /* Fondo blanco */
+    padding: 10px 20px;
+    /* Más espacio interno */
+    border: 2px solid #000;
+    /* Contorno negro */
+    border-radius: 8px;
+    /* Bordes más redondeados */
+    transition: all 0.3s ease;
+    /* Transición para efectos */
+    text-align: center;
+    /* Centra el texto */
+    display: inline-block;
+    /* Asegura que se comporte como un botón */
+
 }
 
 
 .indice-contenedor a:hover {
-    background-color: #f0f0f0; /* Fondo al pasar el mouse */
-    border-color: #333; /* Color del borde al pasar el mouse */
-    color: #0077ff; /* Cambia el color del texto */
+    background-color: #f0f0f0;
+    /* Fondo al pasar el mouse */
+    border-color: #333;
+    /* Color del borde al pasar el mouse */
+    color: #0077ff;
+    /* Cambia el color del texto */
 }
 
 
 /*Animacionea*/
 
-@keyframes appear{
-    from{
+@keyframes appear {
+    from {
         opacity: 0;
         /*scale: 0.5;*/
         transform: translateX(-100px)
     }
-    to{
+
+    to {
         opacity: 1;
         /*scale: 1;*/
         transform: translateX(0px)
     }
 }
 
-.bloque{
+.bloque {
     animation: appear 5s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
@@ -372,7 +418,7 @@ body {
 }
 
 /* Bordes y alineación */
-.tabla-estilizada th, 
+.tabla-estilizada th,
 .tabla-estilizada td {
     border: 2px solid black;
     padding: 10px;
@@ -381,7 +427,8 @@ body {
 
 /* Filas impares: Verde claro */
 .fila-impar {
-    background-color: #c8e6c9; /* Verde claro */
+    background-color: #c8e6c9;
+    /* Verde claro */
     color: black;
 }
 
@@ -393,9 +440,11 @@ body {
 
 /* Encabezados de la tabla */
 .tabla-estilizada th {
-    background-color: #0D47A1; /* Azul oscuro */
+    background-color: #0D47A1;
+    /* Azul oscuro */
     color: white;
-    font-weight: bold; /* Texto en negrita */
+    font-weight: bold;
+    /* Texto en negrita */
 }
 
 
@@ -408,7 +457,7 @@ body {
     height: 100vh;
     position: relative;
     max-height: 100vh;
-    
+
 }
 
 /* Título principal */
@@ -417,12 +466,12 @@ body {
     text-align: center;
     position: relative;
     z-index: 2;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.5; 
+    line-height: 1.5;
     text-decoration: underline;
-    text-decoration-color:rgba(66, 136, 194, 0.9)
+    text-decoration-color: rgba(66, 136, 194, 0.9)
 }
 
 
@@ -432,7 +481,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
+
 }
 
 /* Imágenes flotantes */
@@ -445,13 +494,40 @@ body {
 }
 
 /* Posiciones iniciales de las imágenes */
-.img1 { top: 10%; left: 10%; }
-.img2 { top: 10%; right: 15%; }
-.img3 { top: 60%; left: 5%; }
-.img4 { top: 50%; right: 10%; }
-.img5 { bottom: 25%; left: 20%; }
-.img6 { bottom: 25%; left: 60%; }
-.img7 { top: 5%; left: 40%;  }
+.img1 {
+    top: 10%;
+    left: 10%;
+}
+
+.img2 {
+    top: 10%;
+    right: 15%;
+}
+
+.img3 {
+    top: 60%;
+    left: 5%;
+}
+
+.img4 {
+    top: 50%;
+    right: 10%;
+}
+
+.img5 {
+    bottom: 25%;
+    left: 20%;
+}
+
+.img6 {
+    bottom: 25%;
+    left: 60%;
+}
+
+.img7 {
+    top: 5%;
+    left: 40%;
+}
 
 /* Contenedor para centrar el video */
 .contenedorVideo {
@@ -459,15 +535,15 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px; /
+    height: 300px;/
 }
 
 
 .contenedorVideo iframe {
-    width: 800px;  
+    width: 800px;
     height: 450px;
     padding-top: 40px;
-    
+
 }
 
 /*chat*/
@@ -481,7 +557,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    margin: 20px auto; 
+    margin: 20px auto;
 }
 
 .chat {
